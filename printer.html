@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/printer.css" />
+
+    <title>Принтеры</title>
+  </head>
+  <body>
+    <form class="form">
+      <ul>
+        <li>
+          <h4 cursor="pointer">Ошибка на принтере BROTHER "ТОНЕР"</h4>
+          <p>
+            Включаем МФУ Brother DCP-L2520DWR и дожидаемся окончания прогрева;
+            <br>Открываем переднюю крышку, куда вставляется картридж; <br>Нажимаем и
+            держим клавишу «Меню»;<br> На экране появится «Сброс счетчика TNR-STD
+            A»; <br>Отпускаем кнопку «Меню» и нажимаем один раз «ОК»;<br> Один раз
+            нажимаем клавишу «Вверх» - выбираем «Да»;<br> На экране высветится
+            «Принято»; <br>Нажимаем «Стоп/Выход» и закрываем переднюю крышку;
+            Готово.
+          </p>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </form>
+    <button onclick="back()">Вернуться</button>
+    <script>
+      document.querySelector("h4").addEventListener("click", function () {
+        var text = document.querySelector("p");
+        if (text.style.display === "none") {
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+      });
+      function back() {
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>
